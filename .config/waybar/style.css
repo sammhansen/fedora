@@ -1,0 +1,155 @@
+@import "colors.css";
+
+* {
+  font-family: "SpaceMono Nerd Font";
+  font-size: 97%;
+}
+
+window#waybar {
+  background: @background;
+  border-radius: 4px;
+  border: 0px solid #4c4639;
+}
+
+tooltip {
+  color: @on_background;
+  background: @background;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: @on_background;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#custom-menu {
+  color: @primary;
+  font-size: 23px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#cpu,
+#memory,
+#temperature,
+#disk,
+#clock,
+#bluetooth,
+#battery {
+  color: @on_background;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.icons {
+  color: @primary;
+}
+
+.dot-active {
+  color: @primary;
+}
+
+#custom-swaync {
+  color: @on_background;
+}
+
+#clock {
+  color: @on_background;
+}
+
+#workspaces button {
+  color: @primary;
+  font-size: 13px;
+}
+
+#workspaces button.empty {
+  color: @outline_variant;
+}
+
+#workspaces button.active {
+  color: @on_primary_container;
+  background-color: @primary_container;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 2px 7px 2px 7px;
+}
+
+#workspaces button.special {
+  color: @on_secondary_container;
+  background-color: @secondary_container;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 2px 7px 2px 7px;
+
+}
+
+#workspaces button.visible {
+  color: @on_primary_container;
+  background-color: @primary_container;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 2px 7px 2px 7px;
+}
+
+#workspaces button.urgent {
+  color: @on_error_container;
+  background-color: @error_container;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 2px 7px 2px 7px;
+}
+
+/*#workspaces button.persistent*/
+
+#tags button {
+  color: @outline_variant;
+  font-size: 13px;
+}
+
+#tags button.occupied {
+  color: @primary;
+}
+
+#tags button.focused {
+  color: @on_primary_container;
+  background-color: @primary_container;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 2px 7px 2px 7px;
+}
+
+#tags button.urgent {
+  color: @error;
+}
+
+
+#temperature.critical {
+  background-color: @error_container;
+}
+
+#idle_inhibitor {
+  font-size: 15px;
+}
+
+#bluetooth {
+  font-size: 15px;
+}
+
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: @error_container;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+

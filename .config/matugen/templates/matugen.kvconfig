@@ -1,0 +1,159 @@
+[General]
+blur=false
+composite=true
+drawTitleBar=true
+menuOpacity=0.9
+menuStripe=false
+menuStripeColor=#999999
+menuStripeWidth=1
+menubarHiding=true
+titlebarAlignment=center
+titlebarButtonSize=14
+toolButtonStyle=icon
+tooltipDelay=700
+translucentWindows=false
+x11drag=false
+
+[GeneralColors]
+window.color={{ colors.background.default.hex }}
+base.color={{ colors.background.default.hex }}
+alt.base.color={{ colors.surface_container_low.default.hex }}
+button.color={{ colors.primary_container.default.hex }}
+light.color={{ colors.surface_container_low.default.hex }}
+mid.light.color={{ colors.surface_container_high.default.hex }}
+dark.color={{ colors.surface_container_high.default.hex }}
+mid.color={{ colors.surface_container_high.default.hex }}
+highlight.color={{ colors.primary.default.hex }}
+inactive.highlight.color={{ colors.primary.default.hex }}
+text.color={{ colors.on_background.default.hex }}
+window.text.color={{ colors.on_background.default.hex }}
+button.text.color={{ colors.on_primary_container.default.hex }}
+tooltip.text.color={{ colors.on_background.default.hex }}
+highlight.text.color={{ colors.on_primary_container.default.hex }}
+link.color={{ colors.secondary.default.hex }}
+link.visited.color={{ colors.tertiary.default.hex }}
+
+[PanelButtonCommand]
+textAlignment=center
+
+[PushButton]
+flatBgnd=true
+
+[RadioButton]
+indicatorMargin=4
+
+[ScrollBar]
+grooveMargin=2
+noButtons=true
+
+[ScrollView]
+drawFrame=false
+
+[Slider]
+tickLength=4
+tickWidth=1
+useHighlight=true
+
+[SpinBox]
+flatButtons=true
+flatSButtons=true
+
+[Splitter]
+handleWidth=1
+
+[Tab]
+bottomMargin=4
+topMargin=4
+useHighlight=true
+
+[TabBar]
+drawBase=false
+expanding=true
+highlightTab=true
+useWindowColor=false
+
+[TitleBar]
+drawSystemButtons=true
+
+[ToolButton]
+toolbuttonStyle=icon
+iconOnly=true
+
+[ToolTip]
+drawFrame=false
+drawTextShadow=true
+
+[TreeView]
+drawFocusRect=false
+
+[View]
+drawFocusRect=true
+highlightNewTab=false
+
+[Window]
+drawFrame=false
+
+[Hacks]
+allowBoldText=true
+boldProgressbarText=false
+disableArrows=true
+disableBackground=true
+disableDialogButtonBoxFrame=true
+disableFocusRect=true
+disableFrame=true
+disableGroupBoxOutline=true
+disableGtkCombos=true
+disableGtkScrollbars=true
+disableGtkTrees=true
+disableIconHighlighting=false
+disableKCapacityBar=true
+disableKFilePlacesView=true
+disableKLineEditFrame=true
+disableKListView=true
+disableKPassivePopupShadow=true
+disableKProgressBar=true
+disableKTitleWidget=true
+disableMenuBarAltKey=true
+disableMenuIcons=true
+disableMenubarMnemonics=true
+disableMenubarShadow=true
+disableNeonBorders=false
+disableRuler=true
+disableScrollViewFrame=true
+disableSliders=true
+disableSpinButtons=true
+disableSplitterHighlight=true
+disableTabBarHighlight=true
+disableTabCloseButtons=true
+disableToolBarLines=true
+disableTreeBranchLines=true
+disableTreeExpandButtons=true
+drawButtonFocus=false
+drawFocusIndicator=false
+drawWidgetRects=false
+fixActiveTabBgnd=true
+fixGtkArrows=true
+fixMenuWidth=true
+fixProgressbarTextColor=true
+fixScrollViews=true
+fixSpinButtonTextColor=true
+fixTabFocus=true
+forceAlternateBackground=false
+forceComboBoxHighlight=true
+forceDarkScrollbar=true
+forceDockWidgetColors=true
+forceFocusHighlight=true
+forceInactiveTextColor=false
+forceSquareScrollbars=false
+forceTabHighlight=true
+gtkComboMenu=true
+gtkFrameButtons=true
+menuIcons=false
+noAltMenu=false
+noX11Content=false
+unifyCombo=false
+unifyMenus=false
+unifySpin=false
+unifySplitters=true
+unifyTabs=false
+

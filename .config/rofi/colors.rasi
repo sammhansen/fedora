@@ -1,0 +1,9 @@
+* {
+    font: "SpaceMono Nerd Font 11";
+    background:     #12140d;
+    background-alt: #204e47;
+    foreground:     #d7eb9b;
+    selected:       #434931;
+    active:         #546524;
+    urgent:         #ffb4ab;
+}

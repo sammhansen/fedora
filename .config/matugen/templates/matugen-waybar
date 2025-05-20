@@ -1,0 +1,170 @@
+[
+  {
+    "battery": {
+      "design-capacity": false,
+      "format": "<span foreground='{{ colors.primary.default.hex }}' size='13000'>󰁹</span>\n{capacity}",
+      "format-charging": "<span foreground='{{ colors.primary.default.hex }}' size='13000'>󰁹<span foreground='#2CFF05'><sup></sup></span></span>\n{capacity}",
+      "format-full": "100",
+      "format-plugged": "<span foreground='{{ colors.tertiary.default.hex }}' size='13000'>󰁹</span>\n{capacity}",
+      "full-at": 100,
+      "states": {
+        "critical": 10,
+        "good": 95,
+        "warning": 30
+      },
+      "tooltip": false
+    },
+    "bluetooth": {
+      "format": "",
+      "format-connected": "󰂯<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>",
+      "format-disabled": "󰂯",
+      "on-click": "blueberry",
+      "tooltip": true,
+      "tooltip-format": "󰂯 {device_alias}",
+      "tooltip-format-connected": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "󰂯 {device_alias} 󰁹{device_battery_percentage}"
+    },
+    "clock": {
+      "format": "<span foreground='{{ colors.primary.default.hex }}'></span>\n{:%H\n%M}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "cpu": {
+      "format": "<span foreground='{{ colors.primary.default.hex }}'></span>\n{usage}",
+      "format-alt-click": "click",
+      "interval": 1,
+      "min-length": 5
+    },
+    "custom/batt-warn": {
+      "exec": "/home/tamara/.config/waybar/scripts/batt-warn.sh",
+      "interval": 5
+    },
+    "custom/menu": {
+      "format": "",
+      "on-click": "rofi -show drun -theme ~/.config/rofi/launcher.rasi",
+      "tooltip": false
+    },
+    "custom/swaync": {
+      "escape": true,
+      "exec": "swaync-client -swb",
+      "exec-if": "which swaync-client",
+      "format": "{icon}",
+      "format-icons": {
+        "dnd-inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>",
+        "dnd-none": "",
+        "dnd-notification": "<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>",
+        "inhibited-none": "",
+        "inhibited-notification": "<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>",
+        "none": "",
+        "notification": "<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>"
+      },
+      "on-click": "sleep 0.1 && swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "return-type": "json",
+      "tooltip": false
+    },
+    "disk": {
+      "format": "<span foreground='{{ colors.primary.default.hex }}'></span>\n{percentage_used}",
+      "interval": 30,
+      "path": "/",
+      "tooltip": false
+    },
+    "exclusive": true,
+    "fixed-center": true,
+    "gtk-layer-shell": true,
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "orientation": "vertical",
+      "persistent-workspaces": {
+        "HDMI-A-2": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "eDP-1": [
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "󰛊<span foreground='{{ colors.error_container.default.hex }}'><sup></sup></span>",
+        "deactivated": "󰛊"
+      }
+    },
+    "ipc": true,
+    "layer": "top",
+    "margin-bottom": 4,
+    "margin-left": 4,
+    "margin-right": 0,
+    "margin-top": 4,
+    "memory": {
+      "format": "<span foreground='{{ colors.primary.default.hex }}'></span>\n{percentage}",
+      "interval": 10,
+      "tooltip": false
+    },
+    "modules-center": [
+      "hyprland/workspaces",
+      "river/tags"
+    ],
+    "modules-left": [
+      "custom/menu",
+      "cpu",
+      "memory",
+      "temperature",
+      "disk",
+      "clock"
+    ],
+    "modules-right": [
+      "custom/swaync",
+      "bluetooth",
+      "idle_inhibitor",
+      "tray",
+      "battery",
+      "custom/batt-warn"
+    ],
+    "passthrough": false,
+    "position": "left",
+    "river/tags": {
+      "disable-click": false,
+      "hide-vacant": false,
+      "num-tags": 9,
+      "tag-labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "spacing": 3,
+    "temperature": {
+      "critical-threshold": 82,
+      "format": "<span foreground='{{ colors.primary.default.hex }}'></span>\n{temperatureC}",
+      "format-critical": "<span foreground='{{ colors.error_container.default.hex }}'></span>\n{temperatureC}",
+      "hwmon-path": [
+        "/sys/class/hwmon/hwmon1/temp1_input",
+        "/sys/class/thermal/thermal_zone0/temp"
+      ],
+      "interval": 10,
+      "tooltip": true
+    },
+    "tray": {
+      "spacing": 5
+    },
+    "width": 15
+  }
+]
+

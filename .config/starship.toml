@@ -1,0 +1,104 @@
+add_newline = true
+format = "$os $hostname $username $directory\n$character"
+
+[battery]
+disabled = true
+
+[c]
+format = "[$symbol ](blue)"
+symbol = " "
+
+[character]
+error_symbol = "[ 󰅙 ](bold fg:#ffb4ab)"
+success_symbol = "[  ](bold fg:#91cef5)"
+
+[container]
+format = "[$symbol ](yellow dimmed)"
+symbol = " 󰏖"
+
+[directory]
+format = "([ @ ](bg:default fg:#93000a) [$path ]($style))"
+home_symbol = "  "
+read_only = "  "
+style = "bg:default fg:default"
+truncation_length = 6
+truncation_symbol = "••/"
+
+[directory.substitutions]
+Desktop = "  "
+Documents = "  "
+Downloads = "  "
+GitHub = ""
+Music = " 󰎈 "
+Pictures = "  "
+Videos = "  "
+
+[docker_context]
+format = "[$symbol ](blue)"
+symbol = " "
+
+[golang]
+format = "[$symbol ](blue)"
+symbol = ""
+
+[hostname]
+disabled = false
+format = "[•$hostname](bg:default fg:#d2e5f4)"
+ssh_only = true
+trim_at = ".companyname.com"
+
+[java]
+format = "[$symbol ](red)"
+symbol = " "
+
+[lua]
+format = "[$symbol ](blue)"
+symbol = "󰢱 "
+
+[nix_shell]
+format = "via [$symbol](blue)"
+symbol = " "
+
+[nodejs]
+format = "[$symbol ](yellow)"
+symbol = " "
+
+[os]
+format = "[$symbol]($style)"
+style = "bold white"
+
+[os.symbols]
+Alpine = ""
+Arch = ""
+Artix = ""
+CentOS = ""
+Debian = ""
+EndeavourOS = ""
+Fedora = ""
+Gentoo = ""
+Kali = "󰠥"
+Linux = ""
+Macos = "󰀵"
+Manjaro = ""
+Mint = ""
+NixOS = ""
+Raspbian = ""
+SUSE = ""
+Ubuntu = ""
+Windows = ""
+openSUSE = ""
+
+[python]
+format = "[$symbol ](yellow)"
+symbol = ""
+
+[rust]
+format = "[$symbol ](red)"
+symbol = ""
+
+[username]
+format = "[   $user]($style) "
+show_always = true
+style_root = "bg:default fg:#ffb4ab"
+style_user = "bg:default fg:#91cef5"
+

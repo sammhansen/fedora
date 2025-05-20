@@ -1,0 +1,13 @@
+/* @define-color background rgba(18, 20, 13, 0.9); */
+@define-color background rgba(18, 20, 13, 1.0);
+@define-color on_background rgba(227, 227, 215, 1.0);
+@define-color primary rgba(187, 207, 130, 1.0);
+@define-color primary_container rgba(61, 76, 13, 1.0);
+@define-color on_primary_container rgba(215, 235, 155, 1.0);
+@define-color secondary_container rgba(67, 73, 49, 1.0);
+@define-color on_secondary_container rgba(223, 230, 196, 1.0);
+@define-color outline_variant rgba(70, 72, 60, 1.0);
+@define-color error rgba(255, 180, 171, 1.0);
+@define-color error_container rgba(147, 0, 10, 1.0);
+@define-color on_error_container rgba(255, 218, 214, 1.0);
+

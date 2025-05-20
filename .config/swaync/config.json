@@ -1,0 +1,117 @@
+{
+  "control-center-margin-bottom": 4,
+  "control-center-margin-left": 4,
+  "control-center-margin-right": 4,
+  "control-center-margin-top": 4,
+  "control-center-width": 350,
+  "cssPriority": "user",
+  "fit-to-screen": true,
+  "hide-on-action": false,
+  "hide-on-clear": false,
+  "image-visibility": "when-available",
+  "keyboard-shortcuts": true,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "notification-icon-size": 48,
+  "notification-visibility": {
+    "example-name": {
+      "app-name": "Spotify",
+      "state": "visible",
+      "urgency": "Low"
+    }
+  },
+  "notification-window-width": 350,
+  "positionX": "right",
+  "positionY": "top",
+  "script-fail-notify": true,
+  "timeout": 4,
+  "timeout-critical": 9,
+  "timeout-low": 2,
+  "transition-time": 200,
+  "widget-config": {
+    "backlight": {
+      "device": "intel_backlight",
+      "label": "󰽤 "
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
+          "label": "󰤨 WiFi",
+          "position": "left",
+          "type": "toggle",
+          "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
+        },
+        {
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && bluetoothctl power on || bluetoothctl power off'",
+          "label": "󰂯 Bluetooth",
+          "position": "right",
+          "type": "toggle",
+          "update-command": "sh -c 'bluetoothctl show | grep -q \"Powered: yes\" && echo true || echo false'"
+        },
+        {
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && warp-cli connect || warp-cli disconnect'",
+          "label": " CloudFlare",
+          "position": "left",
+          "type": "toggle",
+          "update-command": "sh -c '[[ $(warp-cli status ) == \"Status update: Connected\" ]] && echo true || echo false'"
+        },
+        {
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && systemctl --user start wlsunset.service || systemctl --user stop wlsunset.service'",
+          "label": " Night",
+          "position": "right",
+          "type": "toggle",
+          "update-command": "sh -c 'systemctl --user is-active --quiet wlsunset.service && echo true || echo false'"
+        },
+        {
+          "active": false,
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && swaync-client --dnd-on || swaync-client --dnd-off'",
+          "label": " DnD",
+          "position": "left",
+          "type": "toggle",
+          "update-command": "sh -c '[[ $(swaync-client --get-dnd) == \"true\" ]] && echo true || echo false'"
+        },
+        {
+          "command": "sh -c 'swaync-client --close-panel; hyprpicker -a'",
+          "label": "󱨍 Picker",
+          "position": "right"
+        },
+        {
+          "command": "sh -c 'swaync-client --close-panel && hyprshot -m region'",
+          "label": "󱣵 Snip",
+          "position": "left"
+        },
+        {
+          "command": "sh -c 'obs'",
+          "label": "󰻿 Record",
+          "position": "right"
+        },
+        {
+          "command": "obs",
+          "label": " Profiles",
+          "position": "left"
+        },
+        {
+          "command": "sh -c 'swaync-client --close-all'",
+          "label": "󰃢 Clear",
+          "position": "right"
+        }
+      ]
+    },
+    "mpris": {
+      "image-radius": 12,
+      "image-size": 96
+    },
+    "volume": {
+      "label": "󰓃 ",
+      "show-per-app": false
+    }
+  },
+  "widgets": [
+    "buttons-grid",
+    "notifications",
+    "mpris",
+    "backlight",
+    "volume"
+  ]
+}

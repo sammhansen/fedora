@@ -1,0 +1,18 @@
+@define-color bg                          {{ colors.background.default.rgba }};
+@define-color on-bg                       {{ colors.on_background.default.rgba }};
+@define-color bg-alt                      {{ colors.surface_bright.default.rgba }};
+@define-color on-bg-alt                   {{ colors.on_surface_variant.default.rgba }};
+@define-color selected                    {{ colors.primary.default.rgba }};
+@define-color hover                       {{ colors.primary.default.rgba | set_alpha: 0.4 }};
+@define-color urgent                      {{ colors.error_container.default.rgba }};
+@define-color bg-primary                  {{ colors.primary_container.default.rgba }};
+@define-color on-bg-primary               {{ colors.on_primary_container.default.rgba }};
+@define-color bg-secondary                {{ colors.secondary_container.default.rgba }};
+@define-color on-bg-secondary             {{ colors.on_secondary_container.default.rgba }};
+@define-color bg-surface                  {{ colors.surface_container.default.rgba }};
+@define-color on-bg-surface               {{ colors.on_surface.default.rgba }};
+@define-color bg-surface-highest          {{ colors.surface_container_highest.default.rgba }};
+@define-color on-bg-surface-highest       {{ colors.on_surface.default.rgba }};
+@define-color tertiary                    {{ colors.tertiary.default.rgba }};
+@define-color on-bg-tertiary              {{ colors.on_tertiary_container.default.rgba }};
+

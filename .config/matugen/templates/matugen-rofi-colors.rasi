@@ -1,0 +1,9 @@
+* {
+    font: "SpaceMono Nerd Font 11";
+    background:     {{ colors.background.default.hex }};
+    background-alt: {{ colors.tertiary_container.default.hex }};
+    foreground:     {{ colors.on_primary_container.default.hex }};
+    selected:       {{ colors.secondary_container.default.hex }};
+    active:         {{ colors.inverse_primary.default.hex }};
+    urgent:         {{ colors.error.default.hex }};
+}
