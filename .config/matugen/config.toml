@@ -21,9 +21,9 @@ output_path = '~/.config/spicetify/Themes/Comfy/color.ini'
 input_path = './templates/matugen-foot.ini'
 output_path = '~/.config/foot/foot.ini'
 
-[templates.zellij]
-input_path = './templates/matugen-zellij.kdl'
-output_path = '~/.config/zellij/config.kdl'
+# [templates.zellij]
+# input_path = './templates/matugen-zellij.kdl'
+# output_path = '~/.config/zellij/config.kdl'
 
 [templates.starship]
 input_path = './templates/matugen-starship.toml'

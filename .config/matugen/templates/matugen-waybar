@@ -40,8 +40,8 @@
       "interval": 5
     },
     "custom/menu": {
-      "format": "",
-      "on-click": "rofi -show drun -theme ~/.config/rofi/launcher.rasi",
+      "format": "",
+      "on-click": "rofi -show drun -theme ~/.config/rofi/theme.rasi",
       "tooltip": false
     },
     "custom/swaync": {

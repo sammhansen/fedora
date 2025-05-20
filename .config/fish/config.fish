@@ -24,12 +24,12 @@ if test -f ~/.cache/ags/user/generated/terminal/sequences.txt
     cat ~/.cache/ags/user/generated/terminal/sequences.txt
 end
 
-alias "ls"="eza"
+# alias "ls"="eza"
 alias "q"="exit"
 alias ":q"="exit"
-alias "l"="eza"
-alias "la"="eza -la"
-alias "sl"="eza"
+# alias "l"="eza"
+# alias "la"="eza -la"
+# alias "sl"="eza"
 alias "lg"="lazygit"
 alias "v"="nvim"
 alias "mkdir"="mkdir -p"
@@ -50,7 +50,6 @@ alias "db-init-gentoo"="distrobox create --name gentoo -i docker.io/gentoo/stage
 alias "kali"="distrobox enter kali -- tmux "
 alias "gentoo"="distrobox enter gentoo"
 alias "fedora"="distrobox enter fedora"
-alias "cat"="bat"
 alias "car"="bat"
 
 # function fish_prompt
