@@ -1,3 +1,8 @@
+extend(){
+  #install terra
+  sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+}
+
 cloudflare(){
   sudo dnf config-manager addrepo --from-repofile=https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
   sudo dnf clean all 
@@ -11,6 +16,12 @@ rpmfusion(){
   pkgs = (
     discord
     )
+}
+
+ffmpeg(){
+  sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+  sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+  sudo dnf install intel-media-driver
 }
 
 cloudflare

@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Calendar
+Exec=chromium-browser --app=https://calendar.google.com
+Icon=/home/tamara/.local/share/applications/icons/calendar.png
+
