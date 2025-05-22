@@ -40,4 +40,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR --export fish_user_paths:/home/tamara/\x2ecargo/bin\x1e/home/asherah/go/bin\x1e/home/t4m4r4/\x2ecargo/bin\x1e/home/tamara/\x2espicetify\x1e/home/t4m4r4/\x2espicetify
+SETUVAR --export fish_user_paths:/home/tamara/go/bin\x1e/home/tamara/\x2ecargo/bin\x1e/home/asherah/go/bin\x1e/home/t4m4r4/\x2ecargo/bin\x1e/home/tamara/\x2espicetify\x1e/home/t4m4r4/\x2espicetify

@@ -1,5 +1,5 @@
 add_newline = true
-format = "$os $hostname $username $directory\n$character"
+format = "$container $hostname $username$directory\n$character"
 
 [battery]
 disabled = true
@@ -10,14 +10,15 @@ symbol = " "
 
 [character]
 error_symbol = "[ 󰅙 ](bold fg:#ffb4ab)"
-success_symbol = "[  ](bold fg:#91cef5)"
+success_symbol = "[  ](bold fg:#9fcafc)"
 
 [container]
-format = "[$symbol ](yellow dimmed)"
 symbol = " 󰏖"
+style="bg:default fg:yellow dimmed"
+format = '[$symbol \[$name\]]($style) '
 
 [directory]
-format = "([ @ ](bg:default fg:#93000a) [$path ]($style))"
+format = "([ @ ](bg:default fg:#93000a)[$path ]($style))"
 home_symbol = "  "
 read_only = "  "
 style = "bg:default fg:default"
@@ -43,7 +44,7 @@ symbol = ""
 
 [hostname]
 disabled = false
-format = "[•$hostname](bg:default fg:#d2e5f4)"
+format = "[•$hostname](bg:default fg:#d6e4f7)"
 ssh_only = true
 trim_at = ".companyname.com"
 
@@ -100,5 +101,5 @@ symbol = ""
 format = "[   $user]($style) "
 show_always = true
 style_root = "bg:default fg:#ffb4ab"
-style_user = "bg:default fg:#91cef5"
+style_user = "bg:default fg:#9fcafc"
 

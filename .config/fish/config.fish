@@ -47,7 +47,7 @@ alias "db"="distrobox"
 alias "db-init-kali"="distrobox create --name kali -i docker.io/kalilinux/kali-rolling:latest --init"
 alias "db-init-fedora"="distrobox create --name fedora -i registry.fedoraproject.org/fedora-toolbox:latest"
 alias "db-init-gentoo"="distrobox create --name gentoo -i docker.io/gentoo/stage3:latest --home /home/tamara/distrobox/gentoo"
-alias "kali"="distrobox enter kali -- tmux "
+alias "kali"="distrobox enter kali"
 alias "gentoo"="distrobox enter gentoo"
 alias "fedora"="distrobox enter fedora"
 alias "car"="bat"
@@ -58,18 +58,21 @@ alias "car"="bat"
 # end
 #
 
-# set -Ux ANDROID_HOME /home/asherah/Android/Sdk
+# set -Ux ANDROID_HOME /home/tamara/Android/Sdk
 
 #set -Ux fish_user_paths $ANDROID_HOME/tools $fish_user_paths
 
 # set -Ux fish_user_paths $ANDROID_HOME/platform-tools $fish_user_paths 
 
-set -Ux fish_user_paths /home/asherah/go/bin $fish_user_paths
+set -Ux fish_user_paths /home/tamara/go/bin $fish_user_paths
 set -Ux fish_user_paths /home/tamara/.cargo/bin $fish_user_paths
 
-# fish_add_path /home/asherah/.spicetify
+# fish_add_path /home/tamara/.spicetify
 
 
 fish_add_path /home/tamara/.spicetify
 
 fish_add_path /home/tamara/.spicetify
+
+# Created by `pipx` on 2025-05-22 18:43:56
+set PATH $PATH /home/tamara/.local/bin

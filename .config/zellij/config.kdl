@@ -400,8 +400,8 @@ copy_on_select true
 // Default: $EDITOR or $VISUAL
 // scrollback_editor "/usr/bin/vim"
  
-// session_name "<RANDOM>"
-// attach_to_session false
+session_name "spawnPoint"
+attach_to_session true
  
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:

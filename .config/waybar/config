@@ -2,10 +2,10 @@
   {
     "battery": {
       "design-capacity": false,
-      "format": "<span foreground='#ffb4aa' size='13000'>󰁹</span>\n{capacity}",
-      "format-charging": "<span foreground='#ffb4aa' size='13000'>󰁹<span foreground='#2CFF05'><sup></sup></span></span>\n{capacity}",
+      "format": "<span foreground='#9fcafc' size='13000'>󰁹</span>\n{capacity}",
+      "format-charging": "<span foreground='#9fcafc' size='13000'>󰁹<span foreground='#2CFF05'><sup></sup></span></span>\n{capacity}",
       "format-full": "100",
-      "format-plugged": "<span foreground='#dfc38c' size='13000'>󰁹</span>\n{capacity}",
+      "format-plugged": "<span foreground='#d6bee5' size='13000'>󰁹</span>\n{capacity}",
       "full-at": 100,
       "states": {
         "critical": 10,
@@ -25,12 +25,12 @@
       "tooltip-format-enumerate-connected": "󰂯 {device_alias} 󰁹{device_battery_percentage}"
     },
     "clock": {
-      "format": "<span foreground='#ffb4aa'></span>\n{:%H\n%M}",
+      "format": "<span foreground='#9fcafc'></span>\n{:%H\n%M}",
       "interval": 1,
       "tooltip": false
     },
     "cpu": {
-      "format": "<span foreground='#ffb4aa'></span>\n{usage}",
+      "format": "<span foreground='#9fcafc'></span>\n{usage}",
       "format-alt-click": "click",
       "interval": 1,
       "min-length": 5
@@ -65,7 +65,7 @@
       "tooltip": false
     },
     "disk": {
-      "format": "<span foreground='#ffb4aa'></span>\n{percentage_used}",
+      "format": "<span foreground='#9fcafc'></span>\n{percentage_used}",
       "interval": 30,
       "path": "/",
       "tooltip": false
@@ -107,7 +107,7 @@
     "margin-right": 0,
     "margin-top": 4,
     "memory": {
-      "format": "<span foreground='#ffb4aa'></span>\n{percentage}",
+      "format": "<span foreground='#9fcafc'></span>\n{percentage}",
       "interval": 10,
       "tooltip": false
     },
@@ -152,7 +152,7 @@
     "spacing": 3,
     "temperature": {
       "critical-threshold": 82,
-      "format": "<span foreground='#ffb4aa'></span>\n{temperatureC}",
+      "format": "<span foreground='#9fcafc'></span>\n{temperatureC}",
       "format-critical": "<span foreground='#93000a'></span>\n{temperatureC}",
       "hwmon-path": [
         "/sys/class/hwmon/hwmon1/temp1_input",

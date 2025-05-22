@@ -57,24 +57,27 @@
           "update-command": "sh -c '[[ $(warp-cli status ) == \"Status update: Connected\" ]] && echo true || echo false'"
         },
         {
-          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && systemctl --user start wlsunset.service || systemctl --user stop wlsunset.service'",
-          "label": " Night",
-          "position": "right",
+          "active": false,
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nm-connection-editor || pkexec pkill openvpn'",
+          "label": "󰯄 OpenVPN",
+          "position": "button",
           "type": "toggle",
-          "update-command": "sh -c 'systemctl --user is-active --quiet wlsunset.service && echo true || echo false'"
+          "update-command": "sh -c '[ -d /sys/class/net/tun0 ] && echo true || echo false'"
+        },
+        {
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && hyprsunset --temperature 3500 || pkill hyprsunset'",
+          "label": " Night",
+          "position": "left",
+          "type": "toggle",
+          "update-command": "sh -c 'pgrep hyprsunset > /dev/null && echo true || echo false'"
         },
         {
           "active": false,
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && swaync-client --dnd-on || swaync-client --dnd-off'",
           "label": " DnD",
-          "position": "left",
+          "position": "right",
           "type": "toggle",
           "update-command": "sh -c '[[ $(swaync-client --get-dnd) == \"true\" ]] && echo true || echo false'"
-        },
-        {
-          "command": "sh -c 'swaync-client --close-panel; hyprpicker -a'",
-          "label": "󱨍 Picker",
-          "position": "right"
         },
         {
           "command": "sh -c 'swaync-client --close-panel && hyprshot -m region'",
@@ -87,8 +90,8 @@
           "position": "right"
         },
         {
-          "command": "obs",
-          "label": " Profiles",
+          "command": "sh -c 'swaync-client --close-panel; hyprpicker -a'",
+          "label": "󱨍 Picker",
           "position": "left"
         },
         {

@@ -1,12 +1,12 @@
-/* @define-color background rgba(26, 17, 16, 0.9); */
-@define-color background rgba(26, 17, 16, 1.0);
-@define-color on_background rgba(241, 222, 220, 1.0);
-@define-color primary rgba(255, 180, 170, 1.0);
-@define-color primary_container rgba(115, 52, 45, 1.0);
-@define-color on_primary_container rgba(255, 218, 213, 1.0);
-@define-color secondary_container rgba(93, 63, 59, 1.0);
-@define-color on_secondary_container rgba(255, 218, 213, 1.0);
-@define-color outline_variant rgba(83, 67, 65, 1.0);
+/* @define-color background rgba(16, 20, 24, 0.9); */
+@define-color background rgba(16, 20, 24, 1.0);
+@define-color on_background rgba(225, 226, 232, 1.0);
+@define-color primary rgba(159, 202, 252, 1.0);
+@define-color primary_container rgba(23, 73, 116, 1.0);
+@define-color on_primary_container rgba(208, 228, 255, 1.0);
+@define-color secondary_container rgba(59, 72, 87, 1.0);
+@define-color on_secondary_container rgba(214, 228, 247, 1.0);
+@define-color outline_variant rgba(66, 71, 78, 1.0);
 @define-color error rgba(255, 180, 171, 1.0);
 @define-color error_container rgba(147, 0, 10, 1.0);
 @define-color on_error_container rgba(255, 218, 214, 1.0);

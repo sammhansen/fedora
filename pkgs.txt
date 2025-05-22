@@ -1,1 +1,3 @@
 mate-polkit
+newsboat
+kdeconnectd
